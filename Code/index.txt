@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Insert data using php</title>
+	<style type="text/css">
+		body{background-color: powderblue;}
+		table { font-size: 30px;margin-left: 25%; }
+		input,textarea {font-size: 30px;}
+	</style>
+</head>
+<body>
+	<br/><br/><br/><br/><br/><br/>
+	<form action="connect.php" method ="post">
+		<table>
+			<tr>
+				<th></th>
+				<th>
+					<h2>Register</h2>
+				</th>
+			</tr>
+
+			<tr>
+				<td>User Name:</td>
+				<td><input type="text" name="user_name"></td>
+			</tr>
+			<tr>
+				<td>Email Address:</td>
+				<td><input type="text" name="email"></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Register"></td>
+			</tr>
+		</table>
+	</form>
+	<?php include 'connect.php';?>
+</body>
+</html>
